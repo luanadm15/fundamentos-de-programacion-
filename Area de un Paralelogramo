@@ -1,0 +1,32 @@
+Proceso AreadelTriangulo
+	Escribir "Calcula el Area de un Paralelogramo"
+	Leer  b, h
+	A<-b*h
+	Escribir A
+	
+FinProceso
+
+
+// Area de un Paralelogramo.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	float b, h, area;
+	cout<<"Calcular el area de un Paralelogramo"<<endl;
+	cout<<"Base: ";
+	cin>>b;
+	cout<<"Altura: ";
+	cin>>h;
+	area=b*h;
+	cout<<"area: "<<area;
+
+	
+	getch();
+}
