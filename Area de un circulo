@@ -1,0 +1,31 @@
+// Himno.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	float r, area,pi=3.141592;
+	cout<<"Calcular el area de un Circulo"<<endl;
+	cout<<"Radio: ";
+	cin>>r;
+	area=pi*r*r;
+	cout<<"area: "<<area;
+
+	
+	getch();
+}
+
+
+Proceso AreadelTriangulo
+	Escribir "Calcula el Area de un Circulo"
+	Leer  r
+	A<-3.141592*r*r
+	Escribir A
+	
+FinProceso
+
