@@ -7,7 +7,7 @@ Proceso AreadelTriangulo
 FinProceso
 
 
-// Himno.cpp : Defines the entry point for the console application.
+// Area de un Triangulo.cpp : Defines the entry point for the console application.
 //
 
 #include "stdafx.h"
