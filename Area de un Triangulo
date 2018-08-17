@@ -1,0 +1,33 @@
+Proceso AreadelTriangulo
+	Escribir "Calcula el Area de un Triangulo"
+	Leer b,h
+	A<-b*h/2
+	Escribir A
+	
+FinProceso
+
+
+// Himno.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	float b, h, area;
+	cout<<"Calcular el Area de un Triangulo"<<endl;
+	cout<<"Base: ";
+	cin>>b;
+	cout<<"Altura: ";
+	cin>>h;
+	area=(b*h)/2;
+	cout<<"area: "<<area;
+
+
+
+	getch();
+}
