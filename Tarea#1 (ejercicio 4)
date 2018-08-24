@@ -29,3 +29,18 @@ void main ()
 
 }
 
+Proceso Ejercicio4
+	Escribir "Ingrese los valores de:"
+	Escribir "Valor x1: "
+	Leer x1
+	Escribir "Valor 2: "
+	Leer x2
+	Escribir "Valor y1: "
+	Leer y1
+	Escribir "Valor y2: "
+	Leer y2
+	d<-RC(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)))
+	Escribir "La distancia entre los dos puntos: ",d
+	
+FinProceso
+
