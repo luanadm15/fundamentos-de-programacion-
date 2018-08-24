@@ -30,3 +30,22 @@ void main ()
 	getch();
 }
 
+Proceso Ejercicio3
+	Escribir "Valor 1:"
+	Leer A
+	prom<-prom+A
+	Escribir "Valor 2:"
+	Leer A
+	prom<-prom+A
+	Escribir "Valor 3:"
+	Leer A
+	prom<-prom+A
+	Escribir "Valor 4:"
+	Leer A
+	prom<-prom+A
+	Escribir "Valor 5:"
+	Leer A
+	prom<-prom+A
+	Escribir "El promedio es: ",prom/5
+FinProceso
+
