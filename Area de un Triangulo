@@ -1,12 +1,3 @@
-Proceso AreadelTriangulo
-	Escribir "Calcula el Area de un Triangulo"
-	Leer b,h
-	A<-b*h/2
-	Escribir A
-	
-FinProceso
-
-
 // Area de un Triangulo.cpp : Defines the entry point for the console application.
 //
 
@@ -31,3 +22,11 @@ void main()
 
 	getch();
 }
+
+Proceso AreadelTriangulo
+	Escribir "Calcula el Area de un Triangulo"
+	Leer b,h
+	A<-b*h/2
+	Escribir A
+	
+FinProceso
