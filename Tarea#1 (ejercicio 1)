@@ -1,0 +1,27 @@
+// Solucion ejercicio 1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std;
+
+void main ()
+{
+	int A, B, C;
+	cout<<"Valor de A: ";
+	cin>>A;
+	cout<<"Valor de B: ";
+	cin>>B;
+	cout<<"Intercambio de los valores de las variables: "<<endl;
+	C=A;
+	A=B;
+	B=C;
+	cout<<"Ahora, el valor de A es: "<<A<<endl;
+	cout<<"Ahora, el valor de B es: "<<B;
+
+	getch();
+}
+
