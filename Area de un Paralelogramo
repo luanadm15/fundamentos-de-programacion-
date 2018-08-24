@@ -1,12 +1,3 @@
-Proceso AreadelTriangulo
-	Escribir "Calcula el Area de un Paralelogramo"
-	Leer  b, h
-	A<-b*h
-	Escribir A
-	
-FinProceso
-
-
 // Area de un Paralelogramo.cpp : Defines the entry point for the console application.
 //
 
@@ -30,3 +21,11 @@ void main()
 	
 	getch();
 }
+
+Proceso AreadelTriangulo
+	Escribir "Calcula el Area de un Paralelogramo"
+	Leer  b, h
+	A<-b*h
+	Escribir A
+	
+FinProceso
