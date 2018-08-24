@@ -1,0 +1,31 @@
+// Ejercicio 4.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std;
+
+void main ()
+{
+	float x1, x2, y1, y2, d;
+	cout<<"Ingrese los valores de: "<<endl;
+	cout<<"Valor x1: ";
+	cin>>x1;
+	cout<<"Valor x2: ";
+	cin>>x2; 
+	cout<<"Valor y1: ";
+	cin>>y1;
+	cout<<"Valor y2: ";
+	cin>>y2;
+	d=sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
+	cout<<"La diastancia entre los dos puntos es: "<<d;
+
+
+	getch ();
+
+
+}
+
