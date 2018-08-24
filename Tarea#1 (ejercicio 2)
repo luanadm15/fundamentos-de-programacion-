@@ -1,0 +1,32 @@
+// Ejercicio 2.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+
+using namespace std;
+
+
+void main ()
+
+{
+	float r, pi=3.141592, perimetro, area;
+	cout<<"Calcular el perimetro de una circunferencia: "<<endl;
+	cout<<"Radio: ";
+	cin>>r;
+	perimetro=pi*r*2;
+	cout<<"perimetro: "<<perimetro<<endl;
+	cout<<"Calcular el area de una circunferencia: "<<endl;
+	cout<<"Radio: ";
+	cin>>r;
+	area=pi*r*r;
+	cout<<"Area: "<<area; 
+
+
+    	 
+	 getch(); 
+
+}
+
