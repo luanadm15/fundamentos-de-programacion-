@@ -30,3 +30,14 @@ void main ()
 
 }
 
+Proceso Encontrarelperimetroyareadelacircunferencia
+	Escribir "Calcular el perimetro de una circunferencia:"
+	Leer r
+	perimetro<-3.141592*r*2
+	Escribir "Perimetro: ",perimetro
+	Escribir "Calcular el area de una circunferencia: "
+	Leer r
+	area<-3.141592*r*r
+	Escribir "Area: ",area
+FinProceso
+
