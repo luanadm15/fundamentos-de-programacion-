@@ -1,0 +1,32 @@
+// Ejercicio 3.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+void main ()
+{
+	float A, prom=0;
+	cout<<"Valor 1: ";
+	cin>>A;
+	prom=prom+A;
+	cout<<"Valor 2: ";
+	cin>>A;
+	prom=prom+A;
+	cout<<"Valor 3: ";
+	cin>>A;
+	prom=prom+A;
+	cout<<"Valor 4: ";
+	cin>>A;
+	prom=prom+A;
+	cout<<"Valor 5: ";
+	cin>>A;
+	prom=prom+A;
+	cout<<"El promedio es: "<<prom/5;
+
+	getch();
+}
+
