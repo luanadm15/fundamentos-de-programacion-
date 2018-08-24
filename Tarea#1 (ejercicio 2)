@@ -3,7 +3,6 @@
 
 #include "stdafx.h"
 #include "conio.h"
-#include "math.h"
 #include <iostream>
 
 using namespace std;
