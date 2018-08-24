@@ -25,3 +25,12 @@ void main ()
 	getch();
 }
 
+Proceso IntercambiodeVariables
+	Leer A
+	Leer B
+	C<-A
+	A<-B
+	B<-C
+	Escribir "El valor de A es:",A
+	Escribir "El valor de B es:",B
+FinProceso
