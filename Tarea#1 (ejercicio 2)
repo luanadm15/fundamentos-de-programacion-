@@ -43,36 +43,3 @@ FinProceso
 
 
 
-Proceso Productoscondescuento
-	Escribir "Cuantos productos va a llevar?"
-	Leer n
-	Si n<=3 Entonces
-		Escribir "Ingrese los precios de los productos: "
-		Leer p1, p2, p3
-		total<-p1+p2+p3
-		Escribir "Total: ",total
-		descuento<-p1*0.3+p2*0.2+p3*0.1
-		Escribir "El descuento: ",descuento	
-		Escribir "Ingrese los precios de los productos:"
-		Leer p1, p2, p3, p4, p5, p6
-		total<-p1+p2+p3+p4+p5+p6
-		descuento<-total*0.2
-		Escribir "Total: ",total
-		Escribir "El descuento: ",descuento
-		
-		
-	Fin si
-	Si n>3 y n<=6 Entonces
-		Escribir "Ingrese el precio de los productos:"
-		Leer p1, p2, p3, p4, p5, p6
-		total<-p1+p2+p3+p4+p5+p6
-		descuento<-total*0.2
-		Escribir "Total: ",total
-		Escribir "El descuento: ",descuento
-		
-	Fin Si
-	
-	totalapagar<-total-descuento
-	Escribir "Total a pagar: ",totalapagar
-	
-FinProceso
