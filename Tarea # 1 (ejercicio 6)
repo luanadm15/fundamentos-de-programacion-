@@ -1,0 +1,43 @@
+// ejercicio 6.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+void main ()
+{
+	double n, p1, p2, p3, p4, p5, p6, descuento, total, totalapagar;
+	cout<<"Cuantos productos va a llevar?"<<endl;
+	cin>>n;
+	if (n<=3)
+		{cout<<"Ingrese los precios de los productos: "<<endl;
+	cin>>p1;
+	cin>>p2;
+	cin>>p3;
+	total=p1+p2+p3;
+	descuento=p1*0.3+p2*0.2+p3*0.1;
+	totalapagar=total-descuento;
+	cout<<"Total: "<<total<<endl;
+	cout<<"El descuento: "<<descuento<<endl;
+	}if ((n>3)&&(n<=6))
+	{
+		cout<<"Ingrese el precio de los productos: "<<endl;
+		cin>>p1;
+		cin>>p2;
+		cin>>p3;
+		cin>>p4;
+		cin>>p5;
+		cin>>p6;
+		total=p1+p2+p3+p4+p5+p6;
+		descuento=total*0.2;
+		cout<<"Total: "<<total<<endl;
+		cout<<"El descuento: "<<descuento<<endl;
+	}
+	totalapagar=total-descuento;
+	cout<<"Total a pagar: "<<totalapagar<<endl;
+
+	getch ();
+}
