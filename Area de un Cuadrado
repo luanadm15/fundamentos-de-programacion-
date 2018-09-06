@@ -10,7 +10,7 @@ using namespace std;
 void main()
 {
 	float l, area;
-	cout<<"Calcular el Area de un Cyadrado"<<endl;
+	cout<<"Calcular el Area de un Cuadrado"<<endl;
 	cout<<"Lado: ";
 	cin>>l;
 	cout<<"lado: ";
@@ -22,7 +22,7 @@ void main()
 }
 
 
-Proceso AreadelTriangulo
+Proceso AreadelCuadrado
 	Escribir "Calcula el Area de un Cuadrado"
 	Leer l, l
 	A<-l*l
