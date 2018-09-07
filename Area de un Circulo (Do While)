@@ -1,0 +1,41 @@
+// Salario con Do.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+	float r, pi=3.1415, A, resp;
+	cout<<"Calcula el Area de un circulo"<<endl;
+	do 
+	{
+		cout<<"Ingrese el radio: ";
+		cin>>r;
+		A=pi*r*r;	
+		cout<<"El area es: "<<A<<endl;
+		cout<<"Desea Continuar?"<<endl;
+		cin>>resp;
+	}
+	while (resp!='s');
+
+	
+	getch();
+}
+
+Proceso CirculoDoWhile
+	Escribir "Calcula el area de un circulo"
+	Repetir
+		Escribir "Ingrese el radio: "
+		Leer r
+		A<-3.1315*r*r
+		Escribir "El area es: ",A
+		Escribir "Desea Continuar? ponga s"
+		Leer resp
+	Hasta Que resp<>"s"
+	
+FinProceso
+
