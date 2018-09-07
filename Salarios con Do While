@@ -27,7 +27,7 @@ void main ()
 		cout<<"Desea continuar? ponga s"<<endl;
 		cin>>resp;
 		}
-	while (resp!='s');
+	while (resp='s');
 	getch();
 }
 
