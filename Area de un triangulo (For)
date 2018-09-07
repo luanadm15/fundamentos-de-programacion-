@@ -13,7 +13,7 @@ void main ()
 	cout<<"Calcula el area de un triangulo"<<endl;
 	cout<<"Cuantas veces desea calcular el area?";
 	cin>>n;
-	for (i=1; n;)
+	for (i=1; i<=n; i++;)
 	{
 		cout<<"Ingrese la base y la altura: "<<endl;
 		cin>>b;
