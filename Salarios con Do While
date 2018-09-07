@@ -9,7 +9,8 @@ using namespace std;
 
 void main ()
 {
-	float sm, sb, sn, resp;
+	float sm, sb, sn;
+	char resp;
 	sm=2060;
 	do 
 	{
