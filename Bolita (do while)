@@ -1,0 +1,41 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+void main ()
+{
+	int numb;
+	float preciototal;
+	//Validar la entrada
+	do 
+	{
+		cout<<"Ingrasar el numero de bolitas: ";
+		cin>>numb;
+	} while (numb<0); //!(numcamisas>=0)
+	do {
+		cout<<"Ingrese el precio: ";
+		cin>>preciototal;
+	} while (preciototal<=0);
+	//Determinar el descuento
+	if (numb==2)
+	{
+		cout<<"El precio total es: "<<preciototal;
+	} else 
+		if (numb==4)
+
+		cout<<"El precio total es: "<<preciototal*0.95;
+	else
+		if (numb==6)
+			cout<<"El precio total es: "<<preciototal*0.8;
+		else 
+			if (numb==8)
+				cout<<"El precio total es: "<<preciototal*0.5;
+			else
+				cout<<"Error numero de bolita no conciderado"<<endl;
+	getch();
+
+}
+
