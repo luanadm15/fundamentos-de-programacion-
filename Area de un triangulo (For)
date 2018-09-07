@@ -1,0 +1,37 @@
+// Triangulo con For.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+	float n, b, h, i, A;
+	cout<<"Calcula el area de un triangulo"<<endl;
+	cout<<"Cuantas veces desea calcular el area?";
+	cin>>n;
+	for (i=1; n;)
+	{
+		cout<<"Ingrese la base y la altura: "<<endl;
+		cin>>b;
+		cin>>h;
+		A=(b*h)/2;
+		cout<<"El Area es: "<<A<<endl;
+	}
+	getch();
+}
+
+Proceso TrianguloconFor
+	Escribir "Calcula el area de un triangulo"
+	Escribir "Cuantas veces desea calcular el area?"
+	Leer n
+	Para i<-1 Hasta n Hacer
+		Escribir "Ingrese la base y la altura: "
+		Leer b, h
+		A<-b*h/2
+		Escribir "El Area es: ",A 
+	Fin Para
+FinProceso
