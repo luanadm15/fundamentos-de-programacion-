@@ -12,7 +12,7 @@ void main ()
 	float n, sb, sn, sm, i;
 	cout<<"Escribir el numero de empleados: ";
 	cin>>n;
-	for (i=1; n;)
+	for (i=1; i<=n; i++;)
 	{
 		cout<<"Ingrese el salario: ";
 		cin>>sb;
