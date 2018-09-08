@@ -1,0 +1,30 @@
+// examen punto 3 .cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+void main ()
+{
+	float cam, total, n;
+	cout<<"El precio de cada camisa es de 100bs"<<endl;
+	cout<<"Ingrese cuantas camisas esta llevando:";
+	cin>>n;
+	cam=n*100;
+	if (n<=5)
+	{
+		total=cam*0.2;
+		cout<<"Con el descuento es: "<<total<<endl;
+	}
+	else
+		if (n>5)
+		{
+			total=cam*0.3;
+			cout<<"Con el descuento es: "<<total<<endl;
+		}
+		getch();
+}
