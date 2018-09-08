@@ -1,0 +1,40 @@
+// examen punto 1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+void main ()
+{
+	float bolita, pago;
+	cout<<"Ingrese cuanto debe pagar: ";
+	cin>>pago;
+	cout<<"Que bolita le toco?"<<endl;
+	cin>>bolita;
+	if (bolita==3)
+	{
+		cout<<"Total a pagar es: "<<pago<<endl;
+	}
+	else 
+		if (bolita==5)
+		{
+			cout<<"Total a pagar: "<<pago*0.05<<endl;
+		}
+		else 
+			if (bolita==7)
+			{
+				cout<<"Total a pagar: "<<pago*0.2<<endl;
+			}
+			else
+				if (bolita==9)
+				{
+					cout<<"Total a pagar: "<<pago*0.5<<endl;
+				}
+				else 
+					cout<<"Error esa bolita no existe";
+	getch();
+}
