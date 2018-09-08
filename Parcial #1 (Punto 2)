@@ -1,0 +1,82 @@
+// examen punto 2 .cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+void main ()
+{
+	int a, b, Num, S;
+	cout<<"Ingrese primer numero; ";
+	cin>>a;
+	cout<<"Ingrese segundo numero; ";
+	cin>>b;
+	S=0;
+	if (a>b)
+	{
+		Num=a;
+		while (Num>=b)
+		{
+			S=S+Num;
+			cout<<";"<<Num<<endl;
+			Num=Num-1;
+		}
+	}
+	else 
+		Num=b;
+	while (	Num>=a)
+			{
+				S=S+Num;
+				cout<<";"<<Num<<endl;
+				Num=Num-1;
+	
+	}
+	cout<<"El resultado es: "<<S;
+	getch();
+
+}
+
+
+
+// examen punto 2 .cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+
+void main ()
+{
+	int a, b, Num, S;
+	cout<<"Ingrese primer numero; ";
+	cin>>a;
+	cout<<"Ingrese segundo numero; ";
+	cin>>b;
+	S=0;
+	if (a>b)
+	{
+		Num=a;
+		while (Num>=b)
+		{
+			S=S+Num;
+			cout<<";"<<Num<<endl;
+			Num=Num-1;
+		}
+	}
+	else Num=a;
+	while (Num<=b)
+	{
+		S=S+Num;
+		cout<<";"<<Num<<endl;
+		Num=Num+1;
+	}
+	cout<<"El resultado es: "<<S;
+	getch();
+}
