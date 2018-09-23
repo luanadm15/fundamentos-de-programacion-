@@ -1,0 +1,70 @@
+// Menu.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+float triangulo(float b, float h);
+float circulo (float r);
+float cuadrado (float l);
+
+void main()
+{
+	int opcion, base, altura, radio, lado, sol;
+	char respuesta;
+	do 
+	{
+		cout<<"------------MENU-------------"<<endl;
+		cout<<"Elija la opcion que desee"<<endl;
+		cout<<"1.Area del Triangulo"<<endl;
+		cout<<"2.Area del Circulo"<<endl;
+		cout<<"3.Area del Cuadrado"<<endl;
+		cout<<"0.Salida"<<endl;
+		cin>>opcion;
+		switch(opcion)
+		{
+		case 1: cout<<"Ingrese la base: ";
+			    cin>>base;
+				cout<<"Ingrese la altura: ";
+				cin>>altura;
+				sol=triangulo(base, altura);
+
+				break;
+		case 2: cout<<"Ingrese el radio: ";
+			    cin>>radio;
+				sol=circulo(radio);
+
+				break;
+		case 3: cout<<"Ingrese lado: ";
+			    cin>>lado;
+				sol=cuadrado(lado);
+
+				break;
+		case 0: cout<<"Salir"; break;
+		default: cout<<"Opcion Invalida"<<endl;
+		}
+		if ((opcion>=1)&&(opcion<=3))
+			cout<<"La solucion es: "<<sol<<endl;
+			cout<<"Desea hacer otro calculo? S o N";
+			cin>>respuesta;
+	} while (opcion!=0);
+		getch();
+	}
+    float triangulo(float b, float h){
+		float resultado;
+		resultado=(b*h)/2;
+		return resultado;
+	}
+	float circulo (float r){
+		float resultado;
+		resultado=3.141592*r*r;
+		return resultado;
+	}
+	float cuadrado (float l){
+		float resultado;
+		resultado=l*l;
+		return resultado;
+	}
