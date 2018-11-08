@@ -92,3 +92,5 @@ void main()
 			cont++;
 		}
 	cout<<"Sin vocales es: "<<var2<<endl
+	getch();
+}
