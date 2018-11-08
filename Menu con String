@@ -1,0 +1,97 @@
+//menu con string.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <string>
+#define MAX 100
+
+using namespace std;
+
+bool cargar (string dato[], int tam);
+void mostrar (string dato[], int tam);
+void ordenar (string dato[], int tam);
+bool buscar (string dato[], int tam, string nombre);
+
+void main()
+{
+	string dato[MAX],nombre;
+	int tam, opcion;
+	bool resp=false;
+	cout<<"Ingrese el tamaño:"<<endl;
+	cin>>tam;
+	do
+	{
+		cout<<"----------MENU-----------"<<endl;
+		cout<<"1.Ingresar"<<endl;
+		cout<<"2.Listar"<<endl;
+		cout<<"3.Clasificar"<<endl;
+		cout<<"4.Buscar"<<endl;
+		cout<<"0.Salir"<<endl;
+		cout<<"Que opcion desea?"<<endl;
+		cin>>opcion;
+		switch (opcion)
+		{
+		case 1: resp= cargar(dato, tam); break;
+		case 2: if (resp==false)
+					cout<<"Sin Datos"<<endl;
+				else mostrar(dato, tam); break;
+		case 3: if (resp==false)
+					cout<<"Sin Datos"<<endl;
+				else
+					ordenar (dato, tam); break;
+		case 4: if (resp==false)
+					cout<<"Sin Datos"<<endl;
+				else 
+				{
+					cout<<"Ingrese el nombre a buscar: "<<endl;
+					getline(cin, nombre);
+					if (buscar(dato, tam, nombre))
+						cout<<"Es tu amigo"<<endl;
+					else
+						cout<<"No es tu amigo"<<endl;
+				}break;
+		case 0: cout<<"Salir"<<endl; break;
+		default: cout<<"Opcion no valida"<<endl;
+		}
+	} while (opcion != 0);
+	getch();
+}
+bool cargar (string dato[], int tam)
+{
+	cin.ignore();
+	bool resp=false;
+	for (int i=0; i<tam; i++)
+	{
+		cout<<"Ingrese el nombre: "<<endl;
+		getline(cin,dato[i]);
+	}
+	return resp;
+}
+void mostrar (string dato[], int tam)
+{
+	for (int i=0; i<tam; i++)
+		cout<<dato[i]<<endl;
+}
+void ordenar (string dato[], int tam)
+{
+	string aux;
+	for (int i=0; i<tam-1; i++)
+	{
+		if (dato[i]>dato[i])
+		{
+			aux=dato[i];
+			dato[i]=dato[i];
+			dato[i]=aux;
+		}
+	}
+}
+bool buscar (string dato[], int tam, string nombre)
+{
+	for (int i=0; i<tam; i++)
+		if (dato[i]==nombre)
+			return true;
+	return false;
+}
+
