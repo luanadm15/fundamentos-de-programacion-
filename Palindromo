@@ -1,4 +1,4 @@
-// palindromo.cpp : Defines the entry point for the console application.
+// examinito punto .cpp : Defines the entry point for the console application.
 //
 
 #include "stdafx.h"
@@ -8,34 +8,30 @@
 
 using namespace std;
 
-bool palindromo (string dato);
+bool palindromo( string dato);
 
-void main ()
+void main()
 {
 	string dato;
 	bool resp;
-	int n;
-	cout<<"Cuantas palabras desea ingresar?"<<endl;
-	cin>>n;
-	cin.ignore();
-	for (int i=0; i<n; i++)
-	{
-		cout<<"Ingrese la o las palabras: "<<endl;
-		getline(cin, dato);
-		resp=palindromo(dato);
-		if (resp)
-			cout<<"Palindromo"<<endl;
-		else 
-			cout<<"No es Palindromo"<<endl;
-		getch();
-	}
+	cout<<"Ingrese la frase: "<<endl;
+	getline(cin, dato);
+	resp=palindromo(dato);
+	if (resp)
+		cout<<"Es Palindromo"<<endl;
+	else
+		cout<<"No es Palindromo"<<endl;
+	getch();
+
 }
+
 bool palindromo (string dato)
 {
-	bool r=true;
+	bool r=false;
 	int num=dato.length();
 	for (int i=0; i<num/2; i++)
-		if (dato.at(i) != dato.at(num-1-i))
-			return false;
-	return r;
+		if (dato.at(i) == dato.at(num-1-i))
+			return true;
+		else 
+			return r;
 }
