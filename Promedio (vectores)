@@ -1,0 +1,32 @@
+// pra.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 100
+
+using namespace std;
+
+void cargar ( int a[], int tam );
+int promedio ( int a[], int tam );
+
+void main ()
+{
+	int tam, a[MAX];
+	cout<<"Ingrese el tamaño del vector: "<<endl;
+	cin>>tam;
+	cargar(a, tam);
+	cout<<"El promedio es: "<<promedio(a, tam)<<endl;
+	
+	getch();
+}
+
+void cargar ( int a[], int tam )
+{
+	for ( int i=0; i<tam; i++)
+	{
+		cout<<"Ingrese los valores del vector: "<<endl;
+		cin>>a[i];
+	}
+}
