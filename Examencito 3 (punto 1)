@@ -1,0 +1,44 @@
+// examencito punto 1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 100
+
+using namespace std;
+
+void cargar ( int vector[], int tam );
+void posicion ( int vector[], int tam );
+
+void main ()
+{
+	int vector[MAX], tam;
+	cout<<"Ingrese el tamaño del vector: "<<endl;
+	cin>>tam;
+	cargar ( vector, tam );
+	posicion (vector, tam);
+
+	getch();
+}
+void cargar ( int vector[], int tam )
+{
+	for ( int i=0; i<tam; i++ )
+	{
+		cout<<"Ingrese el vector: "<<endl;
+		cin>>vector[i];
+	}
+}
+void posicion ( int vector[], int tam )
+{
+	int x;
+	cout<<"Ingrese el numero que desea buscar: "<<endl;
+	cin>>x;
+	for ( int i=0; i<tam; i++ )
+		if (vector[i]==x)
+			cout<<"Las posiciones son: "<<i<<endl;
+}
+
+	
+	
+	
