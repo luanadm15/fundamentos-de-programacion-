@@ -1,0 +1,50 @@
+// examencito punto 3.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+#define MAX 100
+
+using namespace std;
+
+void cargar ( int v[], int tam );
+bool partidario ( int v[], int tam );
+
+void main ()
+{
+	bool resp;
+	int v[MAX], tam;
+	cout<<"Ingrese el tamaño del vector: "<<endl;
+	cin>>tam;
+	cargar ( v, tam );
+	resp=partidario ( v, tam );
+	if ( resp )
+		cout<<"Es Partidario"<<endl;
+	else 
+		cout<<"No es Partidario"<<endl;
+	getch ();
+}
+void cargar ( int v[], int tam )
+{
+	for ( int i=0; i<tam; i++ )
+	{ 
+		cout<<"Ingrese el vector: "<<endl;
+		cin>>v[i];
+	}
+}
+bool partidario ( int v[], int tam )
+{
+	int s=0;
+	for ( int i=0; i<tam; i++ )
+	{
+		if ( i%2==0 )
+			if ( v[i]>v[i+1] )
+				s++;
+	}
+	if ( s==tam/2 )
+		return true;
+	else 
+		return false;
+}
