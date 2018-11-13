@@ -1,0 +1,47 @@
+// revertir.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 100
+
+using namespace std;
+
+void cargar ( int v[], int tam );
+void revertir ( int v[], int tam, int v2[] );
+void mostrar ( int v2[], int tam );
+
+void main ()
+{
+	int v[MAX], tam, v2[MAX];
+	cout<<"Ingrese el tamaño del vector: "<<endl;
+	cin>>tam;
+	cargar ( v, tam );
+	revertir ( v, tam, v2 );
+	mostrar ( v2, tam );
+
+	getch ();
+}
+void cargar ( int v[], int tam )
+{
+	for ( int i=0; i<tam; i++ )
+	{
+		cout<<"Ingrese el vector: "<<endl;
+		cin>>v[i];
+	}
+}
+void revertir ( int v[], int tam, int v2[] )
+{
+	int j=tam;
+	for ( int i=0; i<tam; i++ )
+	{
+		v2[i]=v[j-1];
+		j--;
+	}
+}
+void mostrar ( int v2[], int tam )
+{
+	for ( int i=0; i<tam; i++)
+		cout<<v2[i];
+}
