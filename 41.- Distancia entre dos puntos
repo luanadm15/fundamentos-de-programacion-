@@ -1,0 +1,41 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main () 
+{
+	float x1, x2, y1, y2, dis;
+
+	cout<<"Ingrese el valor de x1: ";
+	cin>>x1;
+	cout<<"Ingrese el valor de y1: ";
+	cin>>y1;
+	cout<<"Ingrese el valor de x2:";
+	cin>>x2;
+	cout<<"Ingrese el valor de y2: ";
+	cin>>y2;
+	dis = sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+	cout<<"La distancia entre los puntos es: "<<dis<<endl;
+
+	getch();
+}
+
+Pseudocodigo
+
+Proceso Dospuntos
+	escribir "Ingrese el valor de X1: "
+	leer x1
+	escribir "Ingrese el valor de y1: "
+	leer y1
+	escribir "Ingrese el valor de x2: "
+	leer x2
+	Escribir "Ingrese el valor de y2: "
+	leer y2
+	
+	dis <- rc((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1))
+	
+	Escribir "La distancia entre los puntos es: ", dis
+FinProceso
