@@ -1,0 +1,35 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main(){
+	int a, b, c;
+	cout<<"Ingrese el valor de a: ";
+	cin>>a;
+	cout<<"Ingrese el valor de b: ";
+	cin>>b;
+	c = a;
+	a = b;
+	b = c;
+	cout<<"El nuevo valor de a es: "<<a<<endl;
+	cout<<"El nuevo valor de b es: "<<b<<endl;
+
+getch();
+}
+
+
+psudocodigo
+
+Proceso intercambio
+	Escribir "Ingrese el valor de a: "
+	Leer a
+	Escribir "Ingrese el valor de b: "
+	Leer b
+	c <- a
+	a <- b
+	b <- c
+	Escribir "El nuevo valor de a es: ", a
+	Escribir "El nuevo valor de b es: " ,b
+FinProceso
