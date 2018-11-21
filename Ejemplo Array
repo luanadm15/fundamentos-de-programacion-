@@ -1,0 +1,89 @@
+// ejemplo array.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+#define MAXROW 20
+#define MAXCOL 20
+
+using namespace std;
+
+void cargar (int matriz[MAXROW][MAXCOL], int n, int m);
+void mostrar (int matriz[MAXROW][MAXCOL], int n, int m);
+int mayor (int matriz[MAXROW][MAXCOL], int n, int m);
+void clasificarfila (int matriz[MAXROW][MAXCOL], int n, int m);
+
+void main ()
+{
+	int n, m, matriz[MAXROW][MAXCOL];
+
+	do
+	{
+		cout<<"Ingrese el numero de filas: ";
+		cin>>n;
+	} while ((n>MAXROW) || (n<=0));
+
+	do
+	{
+		cout<<"Ingrese el numero de columnas: ";
+		cin>>m;
+	} while ((n>MAXCOL) || (n<=0));
+
+	cargar (matriz, n, m);
+	mostrar (matriz, n, m);
+	cout<<"El mayor valor de la matriz es: "<<mayor (matriz, n, m)<<endl;
+	clasificarfila (matriz, n, m);
+	mostrar (matriz, n, m);
+
+	getch ();
+}
+void cargar (int matriz[MAXROW][MAXCOL], int n, int m)
+{
+	for (int i=0; i<n; i++)
+		for (int j=0; j<m; j++)
+		{
+			cout<<"Matriz ["<<i<<"] ["<<j<<"]: ";
+			cin>>matriz[i][j];
+		}
+}
+void mostrar (int matriz[MAXROW][MAXCOL], int n, int m)
+{
+	int i, j;
+	for (int i=0; i<n; i++)
+	{
+		for (int j=0; j<m; j++)
+			cout<<"Matriz ["<<i<<"] ["<<j<<"]: "<<matriz[i][j]<<endl;
+	}
+}
+int mayor (int matriz[MAXROW][MAXCOL], int n, int m)
+{
+	int tmayor, i, j;
+	tmayor=matriz[0][0];
+	for (int i=0; i<n; i++)
+		for (int j=0; j<m; j++)
+			if (tmayor<matriz[i][j])
+				tmayor=matriz[i][j];
+	return tmayor;
+}
+void clasificarfila (int matriz[MAXROW][MAXCOL], int n, int m)
+{
+	int temp;
+	for (int i=0; i<n; i++){
+		for (int i=0; i<n-1; i++){
+			for (int j=i+1; j<m; j++){
+				if (matriz[j]>matriz[i])
+				{
+					temp=matriz[j];
+					matriz[j]=matriz[i];
+					matriz[i]=temp;
+				}
+			}
+		}
+	}
+}
+
+		
+
+
