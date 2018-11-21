@@ -1,0 +1,48 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main(){
+	float nota1, nota2;
+	cout<<"Ingrese la nota 1: ";
+	cin>>nota1;
+	cout<<"Ingrese la nota 2: ";
+	cin>>nota2;
+	nota2 = nota1+nota2;
+	cout<<"Ingrese la nota 3: ";
+	cin>>nota1;
+	nota2 = nota1 + nota2;
+	cout<<"Ingrese la nota 4: ";
+	cin>>nota1;
+	nota2 = nota1 + nota2;
+	cout<<"Ingrese la nota 5: ";
+	cin>>nota1;
+	nota2 = nota1 + nota2;
+	nota2 = nota2/5;
+	cout<<"El promedio final es: "<<nota2<<endl;
+
+getch();
+}
+
+pseudocodigo
+
+Proceso Promedio
+	Escribir "Ingrese la nota 1: "
+	leer nota1
+	Escribir "Ingrese la nota 2: "
+	leer nota2
+	nota2 <- nota1+nota2
+	Escribir "Ingrese la nota 3: "
+	leer nota1
+	nota2 <- nota1+nota2
+	Escribir "Ingrese la nota 4: "
+	leer nota1
+	nota2 <- nota1+nota2
+	Escribir "Ingrese la nota 5: "
+	Leer nota1
+	nota2 <- (nota1+nota2)/5
+	Escribir "El promedio final es: ", nota2
+FinProceso
