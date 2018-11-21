@@ -1,0 +1,41 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main() 
+{
+	int edad;
+	int n, antecedente, nacionalidad, elecciones; 
+	do {
+	cout<<"Cuantos años tienes?"<<endl;
+	cin>>edad;
+	if (edad >= 18) {
+		cout<<"Tienen los antecedentes?"<<endl;
+		cin>>antecedente;
+		if (antecedente == 1) {
+			cout<<"Naciste en bolivia?"<<endl;
+			cin>>nacionalidad;
+			if(nacionalidad == 1) {
+				cout<<"Usted esta habilitado para votar";
+			} else {
+			cout<<"las elecciones son presidenciales?"<<endl;
+			cin>>elecciones;
+				if (elecciones == 1) {
+				cout<<"Lo sentimos, usted solo puede votar en elecciones municipales.";
+				} else {
+				cout<<"Usted esta habilitado para votar";
+				}
+			}
+		} else {
+		cout<<"Lo sentimos pero no puedes votar";
+		}
+	} else {
+	cout<<"No tienes la edad suficiente para votar.";
+	}
+	cout<<"\nDesea saber si otra persona puede votar? ";
+	cin>>n;
+	} while (n != -999);
+	getch();
+  }
