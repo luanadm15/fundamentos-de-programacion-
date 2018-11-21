@@ -1,0 +1,94 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{
+	float d1, d2, d3, e1, e2, e3, x1, x2, x3, y1, y2, y3;
+	float ecu1, ecu2, ecu3;
+	float detPrincipal, det1, det2, det3;
+//Peticion de variables
+	cout<<"Ingrese x1: ";
+	cin>>x1;
+	cout<<"Ingrese y1: ";
+	cin>>y1;
+	cout<<"Ingrese x2: ";
+	cin>>x2;
+	cout<<"Ingrese y2: ";
+	cin>>y2;
+	cout<<"Ingrese x3: ";
+	cin>>x3;
+	cout<<"Ingrese y3: ";
+	cin>>y3;
+
+	d1 = x1*1;
+	d2 = x2*1;
+	d3 = x3*1;
+
+	e1 = y1*1;
+	e2 = y2*1;
+	e3 = y3*1;
+
+	ecu1 = -(pow(x1,2)+pow(y1, 2));
+	ecu2 = -(pow(x2,2)+pow(y2, 2));
+  ecu3 = -(pow(x3,2)+pow(y3, 2));
+
+	detPrincipal = (d1*e2*1)+(e1*1*d3)+(1*d2*e3)-(d3*e2*1)-(e3*1*d1)-(1*d2*e1);
+	det1 = (ecu1*e2*1)+(e1*1*ecu3)+(1*ecu2*e3)-(ecu3*e2*1)-(e3*1*ecu1)-(1*ecu2*e1);
+	det2 = (d1*ecu2*1)+(ecu1*1*d3)+(1*d2*ecu3)-(d3*ecu2*1)-(ecu3*1*d1)-(1*d2*ecu1);
+	det3 = (d1*e2*ecu3)+(e1*ecu2*d3)+(ecu1*d2*e3)-(d3*e2*ecu1)-(e3*ecu2*d1)-(ecu3*d2*e1);
+
+
+	det1 = det1/detPrincipal;
+	det2 = det2/detPrincipal;
+	det3 = det3/detPrincipal;
+
+	cout<<"El centro es: ("<<-(det1/2)<<", "<<-(det2/2)<<")"<<endl;
+  cout<<"El radio es: "<<0.5*sqrt(pow(det1,2)+pow(det2,2)-(4*det3))<<endl;
+	
+	getch();
+}
+
+Pseudocodigo
+
+Proceso TresPuntos
+	Escribir "Ingresar x1: ";
+	leer x1;
+	Escribir "Ingresar y1: ";
+	leer y1;
+	Escribir "Ingresar x2: ";
+	leer x2;
+	Escribir "Ingresar y2: ";
+	leer y2;
+	Escribir "Ingresar x3: ";
+	leer x3;
+	Escribir "Ingresar y3: ";
+	leer y3;
+	d1 <- x1*1;
+	d2 <- x2*1;
+	d3 <- x3*1;
+	
+	e1 <- y1*1;
+	e2 <- y2*1;
+	e3 <- y3*1;
+	
+	ecu1 <- -((x1*x1)+(y1*y1));
+  ecu2 <- -((x2*x2)+(y2*y2));
+	ecu3 <- -((x3*x3)+(y3*y3));
+	
+	detPrincipal <- (d1*e2*1)+(e1*1*d3)+(1*d2*e3)-(d3*e2*1)-(e3*1*d1)-(1*d2*e1);
+	det1 <- (ecu1*e2*1)+(e1*1*ecu3)+(1*ecu2*e3)-(ecu3*e2*1)-(e3*1*ecu1)-(1*ecu2*e1);
+	det2 <- (d1*ecu2*1)+(ecu1*1*d3)+(1*d2*ecu3)-(d3*ecu2*1)-(ecu3*1*d1)-(1*d2*ecu1);
+	det3 <- (d1*e2*ecu3)+(e1*ecu2*d3)+(ecu1*d2*e3)-(d3*e2*ecu1)-(e3*ecu2*d1)-(ecu3*d2*e1);
+	
+	det1 <- (det1/detPrincipal);
+	det2 <- (det2/detPrincipal);
+	det3 <- (det3/detPrincipal);
+	
+	Escribir "El centro es: ", "(",-det1/2,", " ,-det2/2, ")";
+	radio <- 0.5*rc((det1*det1) + (det2*det2)-4*det3);
+	Escribir "El radio es: ", radio ;
+FinProceso
