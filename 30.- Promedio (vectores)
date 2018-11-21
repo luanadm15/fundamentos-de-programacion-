@@ -30,3 +30,13 @@ void cargar ( int a[], int tam )
 		cin>>a[i];
 	}
 }
+int promedio ( int a[], int tam )
+{
+	int s=0;
+	for (int i=0; i<tam; i++)
+	{
+		s=s+a[i];
+		a[i]=a[i]/tam;
+	}
+}
+
