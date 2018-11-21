@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int suma (int a);
+
+void main() 
+{
+	int n, sum;
+	cout<<"Ingresar la cantidad N: ";
+	cin>>n;
+	sum = suma(n);
+	cout<<"El resultado es: "<<sum<<endl;
+  getch();
+}
+
+int suma (int a) 
+{
+	int i = 1, sum = 0;
+	while (i <= a) 
+  {
+    sum =sum + i;
+	  i++;
+	}
+  return sum;
+}
