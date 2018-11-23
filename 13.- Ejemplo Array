@@ -60,7 +60,7 @@ void mostrar (int matriz[MAXROW][MAXCOL], int n, int m)
 int mayor (int matriz[MAXROW][MAXCOL], int n, int m)
 {
 	int tmayor, i, j;
-	tmayor=matriz[0][0];
+	int tmayor=matriz[0][0];
 	for (int i=0; i<n; i++)
 		for (int j=0; j<m; j++)
 			if (tmayor<matriz[i][j])
