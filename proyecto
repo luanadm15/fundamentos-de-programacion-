@@ -1,0 +1,160 @@
+// Prointec.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void restaurantes(int op, int edad);
+void comerciales(int op, int edad);
+void boliches(int op, int edad);
+void restobar(int op, int edad);
+void centrosdesalud(int op, int edad);
+void guber(int op, int edad);
+void publico(int op, int edad);
+void centroturisticos(int op, int edad);
+void supermercados(int op, int edad);
+void cafeteria(int op, int edad);
+void discotecas(int op, int edad);
+void restaurantes1(int op, int edad);
+void restobar1(int op, int edad);
+
+void main ()
+{
+	int edad, opcion, op;
+	cout<<"Ingrese su edad, por favor: ";
+	cin>>edad;
+	cout<<endl;
+	if ((edad>=18) || (edad<=30))
+	{
+		do
+		{
+			cout<<"--------MENU-----------"<<endl;
+			cout<<"1.Restaurantes"<<endl;
+			cout<<"2.Comerciales"<<endl;
+			cout<<"3.Boliches"<<endl;
+			cout<<"4.Restobar"<<endl;
+			cout<<"5.Centros de Salud"<<endl;
+			cout<<"6.Centro Gubernamentales"<<endl;
+			cout<<"7.Luagres Publicos"<<endl;
+			cout<<"8.Supermercados"<<endl;
+			cout<<"0.Salir"<<endl;
+			cout<<endl;
+			cout<<"¿Que opcion desea?"<<endl;
+			cin>>opcion;
+
+			switch (opcion)
+			{
+			case 1: restaurantes(op, edad); break;
+			case 2: comerciales(op, edad); break;
+			case 3: boliches(op, edad); break;
+			case 4: restobar(op, edad); break;
+			case 5: centrosdesalud (op, edad); break;
+			case 6: guber(op, edad); break;
+			case 7: publico(op, edad); break;
+			case 8: supermercados(op, edad); break;
+			case 0: cout<<"Saliste de la aplicacion"<<endl;
+			default: cout<<"Opcion no valida"<<endl;
+			}
+		} while (opcion!=0);
+	}
+	if (edad>=31)
+		do
+		{
+			cout<<"--------MENU-----------"<<endl;
+			cout<<"1.Restaurantes"<<endl;
+			cout<<"2.Comerciales"<<endl;
+			cout<<"3.Centro Turisticos"<<endl;
+			cout<<"4.Restobar"<<endl;
+			cout<<"5.Centros de Salud"<<endl;
+			cout<<"6.Centro Gubernamentales"<<endl;
+			cout<<"7.Luagres Publicos"<<endl;
+			cout<<"8.Supermercados"<<endl;
+			cout<<"9.Cafeteria"<<endl;
+			cout<<"10.Discotecas"<<endl;
+			cout<<"0.Salir"<<endl;
+			cout<<endl;
+			cout<<"¿Que opcion desea?"<<endl;
+			cin>>opcion;
+
+			switch (opcion)
+			{
+			case 1: restaurantes1(op, edad); break;
+			case 2: comerciales(op, edad); break;
+			case 3: centroturisticos(op, edad); break;
+			case 4: restobar1(op, edad); break;
+			case 5: centrosdesalud(op, edad); break;
+			case 6: guber(op, edad); break;
+			case 7: publico(op, edad); break;
+			case 8: supermercados(op, edad); break;
+			case 9: cafeteria(op, edad); break;
+			case 10: discotecas(op, edad); break;
+			case 0: cout<<"Saliste de la aplicacion"<<endl;
+			default: cout<<"Opcion no valida"<<endl;
+			}
+		} while (opcion!=0);
+		getch ();
+}
+
+void restaurantes(int op, int edad)
+{
+	do
+	{
+		cout<<"----------RESTAURANTES-----------"<<endl;
+		cout<<"1.Burger King"<<endl;
+		cout<<"2.KFC"<<endl;
+		cout<<"3.Kiky"<<endl;
+		cout<<"4.Subway"<<endl;
+		cout<<"5.Papa Jhons"<<endl;
+		cout<<"0.Salir"<<endl;
+		cout<<endl;
+		cout<<"¿Que opcion desea?"<<endl;
+		cin>>op;
+
+		switch(op)
+		{
+		case 1: 
+			cout<<"Direcciones: "<<endl;
+			cout<<"Sucursal 1: EL CRISTO Av. Monseñor Rivero esq. Rotonda El Cristo."<<endl;
+			cout<<"Sucursal 2: Plaza Blacutt esq. Réne Moreno."<<endl;
+			cout<<"Sucursal 3: Av. Santa Cruz esq. San Aurelio, 2do. Anillo."<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo: 11:00 am - 11:00 pm"<<endl;
+			break;
+		case 2: 
+			cout<<"Direcciones: "<<endl;
+			cout<<"Sucursal 1: 2do anillo y Rotonda La Salle."<<endl;
+			cout<<"Sucursal 2: Ventura mall, 4to anillo San Martin."<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo: 11:00 am - 11:00 pm"<<endl;
+			break;
+		case 3:
+			cout<<"Direcciones: "<<endl;
+			cout<<"Sucursal 1: entre Beni y Banzer #168, Av.Los Cusis."<<endl;
+			cout<<"Sucursal 2: 4to anillo y Santos Dumont."<<endl;
+			cout<<"Sucursal 3: 2do anillo casi esquina Virgen de cotoca lado del nuevo SEGIP."<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo: 11:00 am - 12:00 am"<<endl;
+			break;
+		case 4:
+			cout<<"Direcciones: "<<endl;
+			cout<<"Sucursal 1: Centro Comercial Ventura Mall Avenida San Martín."<<endl;
+			cout<<"Sucursal 2: Esq. San Aurelio 2do anillo."<<endl;
+			cout<<"Sucursal 3: Av Cristo Redentor."<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo: 11:00 am - 12:00 am"<<endl;
+			break;
+		case 5:
+			cout<<"Direcciones: "<<endl;
+			cout<<"Sucursal 1: Av San Martin calle 6."<<endl;
+			cout<<"Sucursal 2: Avenida Beni calle Rurrenabaque ."<<endl;
+			cout<<"Sucursal 3: Av. Velarde por la Plaza la Blacutt."<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo: 11:00 am - 11:00 am"<<endl;
