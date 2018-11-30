@@ -1,0 +1,97 @@
+// nikno.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void rest (int op, int edad);
+void rest1 (int op, int edad);
+
+void main ()
+{
+	int edad, op;
+	cout<<"Ingrese edad:"<<endl;
+	cin>>edad;
+
+	if ((edad>=18) || (edad<=30))
+	{
+		do
+		{
+			cout<<endl;
+			cout<<"------MENU-------"<<endl;
+			cout<<"1.Restaurantes"<<endl;
+			cout<<"0.Salir"<<endl;
+			cout<<endl;
+			cout<<"Que opcion desea?"<<endl;
+			cin>>op;
+			switch (op)
+			{
+			case 1: rest (op, edad); break;
+			case 0: cout<<"Salir"<<endl; break;
+			default : cout<<"No valido"<<endl; break;
+			}
+		} while (op != 0);
+		getch();
+	}
+	if ((edad>31) || (edad<99))
+	{
+		do
+		{
+			cout<<endl;
+			cout<<"------MENU-------"<<endl;
+			cout<<"1.Restaurantes"<<endl;
+			cout<<"0.Salir"<<endl;
+			cout<<endl;
+			cout<<"Que opcion desea?"<<endl;
+			cin>>op;
+			switch (op)
+			{
+			case 1: rest1 (op, edad); break;
+			case 0: cout<<"Salir"<<endl; break;
+			default : cout<<"No valido"<<endl; 
+			}
+		} while (op != 0);
+		getch();
+	}
+}
+
+
+
+void rest (int op, int edad)
+{
+	cout<<"-----RESTAURANTES------"<<endl;
+	cout<<"1.BK"<<endl;
+	cout<<"0.Salir"<<endl;
+	cout<<endl;
+	cout<<"Que opcion desea?"<<endl;
+	cin>>op;
+	switch (op)
+	{
+	case 1: cout<<"Direccion: Blacut"<<endl; 
+		cout<<"Hoorario: 11 a 12"<<endl; 
+		break;
+	case 0: cout<<"Salir"<<endl; break;
+	default : cout<<"No valido"<<endl; 
+	}
+}
+
+void rest1 (int op, int edad)
+{ 
+	cout<<"-----RESTAURANTES------"<<endl;
+	cout<<"1.Lorca"<<endl;
+	cout<<"0.Salir"<<endl;
+	cout<<endl;
+	cout<<"Que opcion desea?"<<endl;
+	cin>>op;
+	switch (op)
+	{
+	case 1: cout<<"Direccion: Blacut"<<endl; 
+		cout<<"Hoorario: 11 a 12"<<endl; 
+		break;
+	case 0: cout<<"Salir"<<endl; break;
+	default : cout<<"No valido"<<endl; break;
+	}
+}
