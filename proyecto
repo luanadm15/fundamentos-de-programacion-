@@ -1,23 +1,23 @@
+// Proyecto.cpp : Defines the entry point for the console application.
+//
 
 #include "stdafx.h"
 #include <iostream>
-#include <conio.h>
+#include "conio.h"
 
 using namespace std;
 
 void restaurantes(int op, int edad);
 void comerciales(int op, int edad);
 void boliches(int op, int edad);
+void restobar1(int op, int edad);
 void centrosdesalud(int op, int edad);
+void restaurantes1(int op, int edad);
+void centroturisticos(int op, int edad);
 void guber(int op, int edad);
 void publico(int op, int edad);
-void centroturisticos(int op, int edad);
 void supermercados(int op, int edad);
 void cafeteria(int op, int edad);
-void discotecas(int op, int edad);
-void restaurantes1(int op, int edad);
-void restobar1(int op, int edad);
-
 
 void main ()
 {
@@ -29,6 +29,7 @@ void main ()
 	{
 		do
 		{
+			cout<<endl;
 			cout<<"--------MENU-----------"<<endl;
 			cout<<"1.Restaurantes"<<endl;
 			cout<<"2.Comerciales"<<endl;
@@ -63,6 +64,7 @@ void main ()
 	{
 		do
 		{
+			cout<<endl;
 			cout<<"--------MENU-----------"<<endl;
 			cout<<"1.Restaurantes"<<endl;
 			cout<<"2.Comerciales"<<endl;
@@ -90,7 +92,7 @@ void main ()
 			case 7: publico(op, edad); break;
 			case 8: supermercados(op, edad); break;
 			case 9: cafeteria(op, edad); break;
-			case 10: discotecas(op, edad); break;
+			case 10: boliches(op, edad); break;
 			case 0: cout<<"Saliste de la aplicacion"<<endl; break;
 			default: cout<<"Opcion no valida"<<endl;
 			}
@@ -166,6 +168,7 @@ void restaurantes(int op, int edad)
 
 void comerciales(int op, int edad)
 {
+	cout<<endl;
 		cout<<"----------comerciales-----------"<<endl;
 		cout<<"1.centro comercial norte"<<endl;
 		cout<<"2.brisas"<<endl;
@@ -187,9 +190,10 @@ void comerciales(int op, int edad)
 			cout<<"tambien hay peluqerias y tecnicos para telefonos; es muy variado"<<endl;
 			cout<<"horarios de atencion:";
 			cout<<"lunes a sabado 10:00-22:00";
-			cout<<"domingo de 11:00-20";
+			cout<<"domingo de 11:00-20"<<endl;
 			break;
-		case 2: cout<<"direcciones: ";
+		case 2: 
+			cout<<"direcciones: ";
 			cout<<"ubicado en el 4to anillo y avenida banzer "<<endl;
 			cout<<"exactamente en la interseccion de ambas avenidas (edificio grande)"<<endl;
 			cout<<"que se pude hacer ahi: ";
@@ -197,9 +201,10 @@ void comerciales(int op, int edad)
 			cout<<"hay un cine y un patio de comida"<<endl;
 			cout<<"horarios de antencio: ";
 			cout<<"de lunes a sabado 10:00-22:00"<<endl;
-			cout<<"domingo 11:00-22:00";
+			cout<<"domingo 11:00-22:00"<<endl;
 			break;
-		case 3: cout<<"direcciones: ";
+		case 3: 
+			cout<<"direcciones: ";
 			cout<<"ubicado en en 4to anillo a media cuadra de la avenida san martin"<<endl;
 			cout<<" casi en la esquina"<<endl;
 			cout<<"que se pude hacer ahi: ";
@@ -209,7 +214,8 @@ void comerciales(int op, int edad)
 			cout<<"de lunes a sabado 10:00-22:00"<<endl;
 			cout<<"domingo 11:00-22:00";
 			break;
-		case 4: cout<<"direcciones: ";
+		case 4: 
+			cout<<"direcciones: ";
 			 cout<<"ubicado en el centro de la ciudad al frente de la plaza 24 de septiembre"<<endl;
 			 cout<<"entre las calles rene moreno,sucre y bolivar"<<endl;
 			 cout<<"que se puede hacer ahi: ";
@@ -218,7 +224,8 @@ void comerciales(int op, int edad)
 			 cout<<"horarios de atencion: ";
 			 cout<<"lunes a sabado 8:00-19:30";
 	         break;
-		case 5: cout<<"direcciones: ";
+		case 5: 
+			cout<<"direcciones: ";
 			cout<<"a media cuadra de la plaza principal entrando por "<<endl;
 			cout<<"la cuadra junin"<<endl;
 			cout<<"que se pude hacer: ";
@@ -228,9 +235,12 @@ void comerciales(int op, int edad)
 			break;
 		default: cout<<"error";
 		}
-		}
-		void boliches(int op, int edad){
-			cout<<"----------boliches-----------"<<endl;
+}
+
+void boliches(int op, int edad)
+{
+	cout<<endl;
+		cout<<"----------boliches-----------"<<endl;
 		cout<<"1.panorama"<<endl;
 		cout<<"2.mentos"<<endl;
 		cout<<"3.pallet"<<endl;
@@ -242,7 +252,8 @@ void comerciales(int op, int edad)
 
 		switch(op)
 		{
-		case 1: cout<<"Direcciones: ";
+		case 1: 
+			cout<<"Direcciones: ";
 			cout<<"queda en el centro en la calle velasco e ingavi"<<endl;
 			cout<<"que se pude hacer: ";
 			cout<<"es una discoteca de jovenes donde se puede ir a bailar "<<endl;
@@ -251,7 +262,8 @@ void comerciales(int op, int edad)
 			cout<<"viernes y sabado de 21:00-3:00"<<endl;
 			cout<<"jueves de 20:00-2:00";
 			break;
-		case 2:cout<<"direcciones: ";
+		case 2:
+			cout<<"direcciones: ";
 			cout<<"queda en la calle rene moreno media cuadra antes de la sucre"<<endl;
 			cout<<"que se ouede hacer ahi: ";
 			cout<<"es un boliche mas traquilo para ir y sentarse entre amigos y tomar unos tragos"<<endl;
@@ -260,8 +272,9 @@ void comerciales(int op, int edad)
 			cout<<"miercoles y jueves : 19:00-2:00"<<endl;
 			cout<<"viernes y sabado: 20:00-3:00"<<endl;
 			break;
-		case 3: cout<<"direcciones: ",
-					cout<<"queda en el centro en la republiquetas y chuquisaca"<<endl;
+		case 3: 
+			cout<<"direcciones: ",
+			cout<<"queda en el centro en la republiquetas y chuquisaca"<<endl;
 			cout<<" que se puede hacer: ";
 			cout<<"es una discoteca de jovenes donde se puede ir a bailar "<<endl;
 			cout<<"y tomar unos tragos entre amigos y pasarla bien"<<endl;
@@ -269,7 +282,8 @@ void comerciales(int op, int edad)
 			cout<<"viernes y sabado de 21:00-3:00"<<endl;
 			cout<<"jueves de 20:00-2:00";
 			break;
-		case 4: cout<<"direcciones: ";
+		case 4: 
+			cout<<"direcciones: ";
 			cout<<"queda 3er anillo externo canal isuto"<<endl;
 			cout<<"que se puede hacer: ";
 			cout<<"se puede bailar tomar tragos entre amigos"<<endl;
@@ -279,9 +293,71 @@ void comerciales(int op, int edad)
 		case 0: cout<<"salir"; break;
 		default: cout<<"error";
 		}
-		}
-		void centrosdesalud(int op, int edad){
-			cout<<"----------centros de salud-----------"<<endl;
+}
+
+void restobar1(int op,int edad)
+{
+	cout<<endl;
+	cout<<"------RESTOBAR1------"<<endl;
+	cout<<"1. Hard rock"<<endl;
+	cout<<"2. Fridays"<<endl;
+	cout<<"3. Goss"<<endl;
+	cout<<"4. Container"<<endl;
+	cout<<"5. Lorca"<<endl;
+	cout<<"0.Salir"<<endl;
+	cout<<endl;
+	cout<<"¿Que opcion desea?"<<endl;
+	cin>>op;
+
+		switch(op)
+		{
+		case 1: 
+			cout<<"Direcciones: "<<endl;
+			cout<<"Sucursal 1: Av. Cuarto Anillo, Esq. San Martín."<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo de 12:00 pm- 02:00 am"<<endl;
+			break;
+		case 2:
+			cout<<"Direcciones: "<<endl;
+			cout<<"Sucursal 1: Av. Cuarto Anillo, Esq. San Martín."<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo de 12:00 pm- 02:00 am"<<endl;
+			break;
+		case 3:
+			cout<<"Direcciones: "<<endl;
+			cout<<"Sucursal 1: Boulevard Ventura Mall."<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo de 11:00 am- 11:00 pm"<<endl;
+			break;
+		case 4:
+			cout<<"Direcciones: "<<endl;
+			cout<<"Sucursal 1:Av. Cristóbal De Mendoza Calle Las Limas (Al lado Ex Bingo Baiti)."<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo de 18:00 pm- 01:00 am"<<endl;
+			break;
+		case 5:
+			cout<<"Direcciones: "<<endl;
+			cout<<"Sucursal 1:Calle Sucre 8 (0,14 km)."<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo de 09:00 am- 18:00 pm"<<endl;
+			break;
+		case 0:
+		    cout<<"Salir"<<endl;
+		    break;
+	    default: cout<<"error"<<endl;
+	}
+}
+
+
+void centrosdesalud(int op, int edad)
+{
+	cout<<endl;
+		cout<<"----------centros de salud-----------"<<endl;
 		cout<<"1.incor"<<endl;
 		cout<<"2.foianinni"<<endl;
 		cout<<"3.caja petrolera"<<endl;
@@ -293,37 +369,155 @@ void comerciales(int op, int edad)
 
 		switch(op)
 		{
-		case 1: cout<<"Direcciones: ";
+		case 1: 
+			cout<<"Direcciones: ";
 			cout<<"2do anillo avenida pirai";
 			cout<<"descripcion: ";
 			cout<<"es un centro de salud muy prestigiado"<<endl;
 			cout<<"horarios de atencion:"<<endl;
 			cout<<"24 horas";
 			break;
-			case 2: cout<<"Direcciones: ";
+		case 2: 
+			cout<<"Direcciones: ";
 			cout<<"avenida irala calle la paz";
 			cout<<"descripcion: ";
 			cout<<"es un centro de salud muy prestigiado"<<endl;
 			cout<<"horarios de atencion:"<<endl;
 			cout<<"24 horas";
 			break;
-			case 3: cout<<"Direcciones: ";
+		case 3: 
+			cout<<"Direcciones: ";
 			cout<<"avenida cañoto calle igavi";
 			cout<<"descripcion: ";
 			cout<<"es un centro de salud bastante completo "<<endl;
 			cout<<"horarios de atencion:"<<endl;
 			cout<<"24 horas";
 			break;
-			case 4: cout<<"Direcciones: ";
+		case 4: 
+			cout<<"Direcciones: ";
 			cout<<"avenida cañoto calle junin";
 			cout<<"descripcion: ";
 			cout<<"es un centro de salud muy importante y completo, tiene muy buenos medicos"<<endl;
 			cout<<"horarios de atencion:"<<endl;
 			cout<<"24 horas";
 			break;
-			case 0: cout<<"salir";
-			default: cout<<"error";
+		case 0: cout<<"salir";
+		default: cout<<"error";
 
+	}
+}
+
+void restaurantes1(int op,int edad)
+{
+	cout<<endl;
+	cout<<"------RESTAURANTES1------"<<endl;
+	cout<<"1. Piegari Restaurant"<<endl;
+	cout<<"2. El Arriero"<<endl;
+	cout<<"3. La Casa Del Camba"<<endl;
+	cout<<"4. Jardin De Asia"<<endl;
+	cout<<"5. Los Hierros"<<endl;
+	cout<<"0.Salir"<<endl;
+	cout<<endl;
+	cout<<"¿Que opcion desea?"<<endl;
+	cin>>op;
+
+		switch(op)
+		{
+		case 1: 
+			cout<<"Direcciones: "<<endl;
+			cout<<"Sucursal 1: Hotel Los Tajibos - 3er Anillo Los Tajibos Hotel."<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo de 12:00 pm- 15:00 pm y 18:00 pm- 23:00pm"<<endl;
+			break;
+		case 2:
+			cout<<"Direcciones: "<<endl;
+			cout<<"Sucursal 1:Av. San Martín, Santa Cruz de la Sierra."<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo de 12:00 pm- 15:00 pm y 18:00 pm- 22:00pm"<<endl;
+			break;
+		case 3:
+			cout<<"Direcciones: "<<endl;
+			cout<<"Sucursal 1: Av Cristobal Mendoza 1365, Santa Cruz de la Sierra."<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo de 11:00 am- 15:00 pm y 18:00 pm- 22:00pm "<<endl;
+			break;
+		case 4:
+			cout<<"Direcciones: "<<endl;
+			cout<<"Sucursal 1:Av Marcelo Terceros Bánzer, Santa Cruz de la Sierra."<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo de 12:00 pm- 15:00 pm y 18:00 pm- 23:00pm "<<endl;
+			break;
+		case 5:
+			cout<<"Direcciones: "<<endl;
+			cout<<"Sucursal 1: Avenida San Martín, Santa Cruz de la Sierra."<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo de 12:00 pm- 17:00 pm  "<<endl;
+			break;
+		case 0:
+		    cout<<"Salir"<<endl;
+		    break;
+	    default: cout<<"error"<<endl;
+	}
+}
+
+void centroturisticos(int op, int edad)
+{
+	cout<<endl;
+		cout<<"-------CENTRO TURISTICOS--------"<<endl;
+		cout<<"1.Biocentro Guembe."<<endl;
+		cout<<"2.Catedral Basilica de San Lorenzo."<<endl;
+		cout<<"3.Casa De La Cultura Raul Otero Reiche."<<endl;
+		cout<<"4.Jardin Botanico."<<endl;
+		cout<<"5.Zoologico Noel Kempff."<<endl;
+		cout<<"0.Salir"<<endl;
+		cout<<endl;
+		cout<<"¿Que opcion desea?"<<endl;
+		cin>>op;
+
+		switch(op)
+		{
+		case 1: 
+			cout<<"Direcciones: "<<endl;
+			cout<<"a 15 minutos de la zona del Urubo"<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo : 8:30 am - 18:00 pm "<<endl;
+			break;
+		case 2: 
+			cout<<"Direcciones: "<<endl;
+			cout<<"en el centro de la ciudad frente a la plaza 24 de Septiembre"<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Sábado 5:30 am - 7:00 pm. Domingos 4:30 am - 1:00 pm y 3:00 pm - 7:30 pm."<<endl;
+			break;
+		case 3:
+			cout<<"Direcciones: "<<endl;
+			cout<<"Calle Libertad # 65 entre Ayacucho y Junín"<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Viernes: 8:00am - 12:00pm y 14:30 pm - 20:00 pm"<<endl;
+			break;
+		case 4:
+			cout<<"Direcciones: "<<endl;
+			cout<<"Carretera a Cotoca, Km 8 1/2"<<endl;
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Lunes a Domingo: 8:00 am - 18:00 pm"<<endl;
+			break;
+		case 5:
+			cout<<"Direcciones: "<<endl;
+			cout<<"Av. Marcelo Terceros Bánzer (Tercer anillo externo)"<<endl; 
+			cout<<endl;
+			cout<<"Horarios de Atencion: "<<endl;
+			cout<<"Martes a Domingo: 9:00 am - 17:30 pm "<<endl;
+			break;
+		case 0: cout<<"Saliste del menu de Centros Turisticos"<<endl; break;
+		default: cout<<"Opcion no Valida"<<endl;
 		}
 }
 
@@ -440,62 +634,6 @@ void publico(int op, int edad)
 		}
 }
 
-void centroturisticos(int op, int edad)
-{
-	cout<<endl;
-		cout<<"-------CENTRO TURISTICOS--------"<<endl;
-		cout<<"1.Biocentro Guembe."<<endl;
-		cout<<"2.Catedral Basilica de San Lorenzo."<<endl;
-		cout<<"3.Casa De La Cultura Raul Otero Reiche."<<endl;
-		cout<<"4.Jardin Botanico."<<endl;
-		cout<<"5.Zoologico Noel Kempff."<<endl;
-		cout<<"0.Salir"<<endl;
-		cout<<endl;
-		cout<<"¿Que opcion desea?"<<endl;
-		cin>>op;
-
-		switch(op)
-		{
-		case 1: 
-			cout<<"Direcciones: "<<endl;
-			cout<<"a 15 minutos de la zona del Urubo"<<endl;
-			cout<<endl;
-			cout<<"Horarios de Atencion: "<<endl;
-			cout<<"Lunes a Domingo : 8:30 am - 18:00 pm "<<endl;
-			break;
-		case 2: 
-			cout<<"Direcciones: "<<endl;
-			cout<<"en el centro de la ciudad frente a la plaza 24 de Septiembre"<<endl;
-			cout<<endl;
-			cout<<"Horarios de Atencion: "<<endl;
-			cout<<"Lunes a Sábado 5:30 am - 7:00 pm. Domingos 4:30 am - 1:00 pm y 3:00 pm - 7:30 pm."<<endl;
-			break;
-		case 3:
-			cout<<"Direcciones: "<<endl;
-			cout<<"Calle Libertad # 65 entre Ayacucho y Junín"<<endl;
-			cout<<endl;
-			cout<<"Horarios de Atencion: "<<endl;
-			cout<<"Lunes a Viernes: 8:00am - 12:00pm y 14:30 pm - 20:00 pm"<<endl;
-			break;
-		case 4:
-			cout<<"Direcciones: "<<endl;
-			cout<<"Carretera a Cotoca, Km 8 1/2"<<endl;
-			cout<<endl;
-			cout<<"Horarios de Atencion: "<<endl;
-			cout<<"Lunes a Domingo: 8:00 am - 18:00 pm"<<endl;
-			break;
-		case 5:
-			cout<<"Direcciones: "<<endl;
-			cout<<"Av. Marcelo Terceros Bánzer (Tercer anillo externo)"<<endl; 
-			cout<<endl;
-			cout<<"Horarios de Atencion: "<<endl;
-			cout<<"Martes a Domingo: 9:00 am - 17:30 pm "<<endl;
-			break;
-		case 0: cout<<"Saliste del menu de Centros Turisticos"<<endl; break;
-		default: cout<<"Opcion no Valida"<<endl;
-		}
-}
-
 void supermercados(int op, int edad)
 {
 	cout<<endl;
@@ -560,7 +698,7 @@ void supermercados(int op, int edad)
 		}
 }
 
-   void cafeteria( int op,int edad)
+void cafeteria( int op,int edad)
 {
 	cout<<"------CAFETERIAS------"<<endl;
 	cout<<"1.Delicias de Oro"<<endl;
@@ -622,118 +760,3 @@ void supermercados(int op, int edad)
 	default: cout<<"error"<<endl;
 	}
 }
-
-void restobar1(int op,int edad)
-{
-	cout<<"------RESTOBAR1------"<<endl;
-	cout<<"1. Hard rock"<<endl;
-	cout<<"2. Fridays"<<endl;
-	cout<<"3. Goss"<<endl;
-	cout<<"4. Container"<<endl;
-	cout<<"5. Lorca"<<endl;
-	cout<<"0.Salir"<<endl;
-	cout<<endl;
-	cout<<"¿Que opcion desea?"<<endl;
-	cin>>op;
-
-		switch(op)
-		{
-		case 1: 
-			cout<<"Direcciones: "<<endl;
-			cout<<"Sucursal 1: Av. Cuarto Anillo, Esq. San Martín."<<endl;
-			cout<<endl;
-			cout<<"Horarios de Atencion: "<<endl;
-			cout<<"Lunes a Domingo de 12:00 pm- 02:00 am"<<endl;
-			break;
-		case 2:
-			cout<<"Direcciones: "<<endl;
-			cout<<"Sucursal 1: Av. Cuarto Anillo, Esq. San Martín."<<endl;
-			cout<<endl;
-			cout<<"Horarios de Atencion: "<<endl;
-			cout<<"Lunes a Domingo de 12:00 pm- 02:00 am"<<endl;
-			break;
-		case 3:
-			cout<<"Direcciones: "<<endl;
-			cout<<"Sucursal 1: Boulevard Ventura Mall."<<endl;
-			cout<<endl;
-			cout<<"Horarios de Atencion: "<<endl;
-			cout<<"Lunes a Domingo de 11:00 am- 11:00 pm"<<endl;
-			break;
-		case 4:
-			cout<<"Direcciones: "<<endl;
-			cout<<"Sucursal 1:Av. Cristóbal De Mendoza Calle Las Limas (Al lado Ex Bingo Baiti)."<<endl;
-			cout<<endl;
-			cout<<"Horarios de Atencion: "<<endl;
-			cout<<"Lunes a Domingo de 18:00 pm- 01:00 am"<<endl;
-			break;
-		case 5:
-			cout<<"Direcciones: "<<endl;
-			cout<<"Sucursal 1:Calle Sucre 8 (0,14 km)."<<endl;
-			cout<<endl;
-			cout<<"Horarios de Atencion: "<<endl;
-			cout<<"Lunes a Domingo de 09:00 am- 18:00 pm"<<endl;
-			break;
-		case 0:
-		    cout<<"Salir"<<endl;
-		    break;
-	    default: cout<<"error"<<endl;
-	}
-}
-
-void restaurantes1(int op,int edad)
-{
-	cout<<"------RESTAURANTES1------"<<endl;
-	cout<<"1. Piegari Restaurant"<<endl;
-	cout<<"2. El Arriero"<<endl;
-	cout<<"3. La Casa Del Camba"<<endl;
-	cout<<"4. Jardin De Asia"<<endl;
-	cout<<"5. Los Hierros"<<endl;
-	cout<<"0.Salir"<<endl;
-	cout<<endl;
-	cout<<"¿Que opcion desea?"<<endl;
-	cin>>op;
-
-		switch(op)
-		{
-		case 1: 
-			cout<<"Direcciones: "<<endl;
-			cout<<"Sucursal 1: Hotel Los Tajibos - 3er Anillo Los Tajibos Hotel."<<endl;
-			cout<<endl;
-			cout<<"Horarios de Atencion: "<<endl;
-			cout<<"Lunes a Domingo de 12:00 pm- 15:00 pm y 18:00 pm- 23:00pm"<<endl;
-			break;
-		case 2:
-			cout<<"Direcciones: "<<endl;
-			cout<<"Sucursal 1:Av. San Martín, Santa Cruz de la Sierra."<<endl;
-			cout<<endl;
-			cout<<"Horarios de Atencion: "<<endl;
-			cout<<"Lunes a Domingo de 12:00 pm- 15:00 pm y 18:00 pm- 22:00pm"<<endl;
-			break;
-		case 3:
-			cout<<"Direcciones: "<<endl;
-			cout<<"Sucursal 1: Av Cristobal Mendoza 1365, Santa Cruz de la Sierra."<<endl;
-			cout<<endl;
-			cout<<"Horarios de Atencion: "<<endl;
-			cout<<"Lunes a Domingo de 11:00 am- 15:00 pm y 18:00 pm- 22:00pm "<<endl;
-			break;
-		case 4:
-			cout<<"Direcciones: "<<endl;
-			cout<<"Sucursal 1:Av Marcelo Terceros Bánzer, Santa Cruz de la Sierra."<<endl;
-			cout<<endl;
-			cout<<"Horarios de Atencion: "<<endl;
-			cout<<"Lunes a Domingo de 12:00 pm- 15:00 pm y 18:00 pm- 23:00pm "<<endl;
-			break;
-		case 5:
-			cout<<"Direcciones: "<<endl;
-			cout<<"Sucursal 1: Avenida San Martín, Santa Cruz de la Sierra."<<endl;
-			cout<<endl;
-			cout<<"Horarios de Atencion: "<<endl;
-			cout<<"Lunes a Domingo de 12:00 pm- 17:00 pm  "<<endl;
-			break;
-		case 0:
-		    cout<<"Salir"<<endl;
-		    break;
-	    default: cout<<"error"<<endl;
-	}
-}
-
